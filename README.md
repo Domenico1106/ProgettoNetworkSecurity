@@ -1,5 +1,5 @@
 # Titolo progetto 
-L'obiettivo di questo progetto è quello di illustrare vettori di attacco e proporre delle mitigazioni in un ambiente composto da una topologia di rete SDN gestita da un controller remoto ONOS. Gli attacch in particolare sono eseguiti sull'Host Tracking Service. 
+L'obiettivo di questo progetto è quello di illustrare vettori di attacco e proporre delle mitigazioni in un ambiente composto da una topologia di rete SDN gestita da un controller remoto ONOS. In particolare, gli attacchi sono eseguiti sull'Host Tracking Service. 
 
 
 ## Mininet
