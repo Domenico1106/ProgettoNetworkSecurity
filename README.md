@@ -12,7 +12,7 @@ chmod +x install.sh
 ```
 L'emulatore va avviato usando il comando `sudo mn` oppure, come fatto per il progetto, utilizzare la libreria python di mininet per creare una topologie complesse ed eseguire operazioni.
 Per valutare gli esperimenti è stata utilizzata una topologia di rete composta da quattro hosts e due switches tuttavia nell'analisi delle prestazioni e delle metriche sono state introdotto anche altre topologie con numero di hosts e swithces differenti. È stato inoltre introdotto un quinto hosts che funge da nat per permettere agli host della rete di comunicare con l'esterno. La topologia usata è mostrata nell'immagine seguente: 
-![topologia](./Progetto Network Security/mitm/schema.png)
+![topologia](Progetto Network Security/mitm/schema.png)
 
 ## Controller ONOS
 Come citato in prececdenza è stato utizzato come controller ONOS, in particolare la sua versione 2.7.0. Piuttosto che creare una VM a parte per il controller è stato utilizzato il suo container Docker per cui per poterlo utitizzare si è dovuto fare la pull dell'immmagine. Per la creazione del container si è ritenuto utile abilitare oltre che alle porte predeinite usate da onos anche la porta SSH (22) mappata sulla porta locale 2200 per facilitare lo sviluppo di applicazioni onos custom per l'implementazione della difesa. 
@@ -35,3 +35,10 @@ docker exec -it onos /bin/bash
 Nel progetto sono state implementate diverse soluzioni di attacco e di difesa. Gli attacchi sono stati fatti tutti utilizzando il linguaggio Python, mentre per quanto riguarda la difesa ne è stata fatta una in Python e due in Java come applicazioni ONOS custom.
 In particolare gli attacchi seguono la seguente logica: 
 1. Sfruttare 
+
+
+## > COME UTILIZZARE IL PROGETTO:
+
+```git
+
+```
