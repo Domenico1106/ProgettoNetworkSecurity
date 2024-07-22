@@ -99,7 +99,7 @@ Per prima cosa è stato necessario aprire una shell all'interno del controller u
 ```bash 
 docker exec -it onos /bin/bash
 ```
-All'interno della shell è stata cambiata la password per l'account di root in modo da conoscerla e poterla utilizzare in caso di successivi accessi futuri: `passwd root`
+All'interno della shell è stata cambiata la password per l'account di root in modo da conoscerla e poterla utilizzare in caso di successivi accessi futuri: `passwd root` e poi inserire la password desiderata.
 Dopo aver settato la password è stato necessario scaricare il server ssh:
 ```bash
 apt update
