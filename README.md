@@ -31,7 +31,7 @@ L'***AppMitmDetection2*** è un'applicazione analoga alla precedente. Anch'essa 
 ***mitm_detection*** è uno script python che viene eseguito sull'host nat0 al momento dell' avvio della rete fino alla terminazione dell'intera topologia. Il suo scopo è proteggere le api Rest da potenziali richieste malevole. Per realizzare ciò, lo script crea un proxy che si mette in ascolto delle richieste HTTP indirizzate al controller. Quando ne riceve una, ne verifica la provenienza tramite firma digitale (anche in questo scenario ciascun host e il controller possegono una coppia di chiavi, pubblica e privata), scartando le richieste di cui non riesce a identificare il mittente. Se la provenienza della richiesta è legittima, viene successivamente analizzato il contenuto del body. Se esso contiene modifiche potenzialmente dannose per la rete, la richiesta HTTP viene scartata e l'attaccante espulso dalla rete. Al contrario, le richieste legittime verranno inoltrate al controller. 
 
 ## Guida installazione e utilizzo del progetto
-Per tutti i dettagli sull'ambiente utilizzato e sull'installazione e utilizzo del progetto si rimanda al [Guida all'installazione](./progettoNetwork/README) interno
+Per tutti i dettagli sull'ambiente utilizzato e sull'installazione e utilizzo del progetto si rimanda al [Guida all'installazione](./progettoNetwork/README.md) interno
 
 ## Autori
 - [Domenico Carreri](https://github.com/Domenico1106)
