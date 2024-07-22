@@ -65,7 +65,7 @@ Scaricato il repository mininet può essere installato seguendo i seguenti passi
 ```bash 
 cd mininet/util
 chmod +x install.sh
-./install.sh -a
+sudo PYTHON=python3 ./install.sh -a
 ``` 
 Per avviare mininet si può utilizzare il comando `sudo mn` oppure, come fatto durante il progetto, si può creare un programma Python che utilizza le API di mininet per realizzare topologie di rete più specifiche e complesse.
 
