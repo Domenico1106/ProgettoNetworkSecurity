@@ -91,7 +91,8 @@ apt install openssh-server -y
 Installato il server SSH non è ancora pronto, vanno modificati i parametri di configurazione. Per poterli modificare è stato necessario installare un editor di testo come ad esempio vim:
 ```bash
 apt install vim -y
-vim /etc/ssh/sshd_config```
+vim /etc/ssh/sshd_config
+```
 all'interno del file sshd_config bisogna aggiungere la seguente riga nella sezione di autenticatione: `PermitRootLogin yes`
 
 Per salvare le modifiche ed uscire dall'editor premere `ESC` e successivamente `:wq`
