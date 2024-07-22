@@ -1,0 +1,79 @@
+Tempo:
+
+    Tempi di scambio ping tra host:
+        > min: [0.055, 0.058, 0.107] ms
+        > avg: [0.156, 0.119, 0.120] ms
+        > max: [0.448, 0.189, 0.146] ms
+
+    Tempi di invio pacchetti con mitm senza difesa:
+        > min: [145.303, 187.329, 279.624] ms
+        > avg: [248.489, 327.884, 385.541] ms
+        > max: [305.105, 438.583, 544.547] ms
+
+    Tempi di invio pacchetti con Difesa attiva:
+        > min: [0.109, 0.135, 0.227] ms
+        > avg: [0.423, 0.297, 0.466] ms
+        > max: [0.751, 0.861, 0.916] ms
+
+    Tempi di invio pacchetti con attacco HTS_Poisoning e difesa attivi:
+        > min: [0.086, 0.112, 0.249] ms
+        > avg: [1.084, 1.111, 0.941] ms
+        > max: [8.146, 8.424, 6.878] ms
+
+    ----------------------------------------------------------------------------------------------
+
+    > Tempo medio di Discovery (Pingall iniziale + Diffie Hellman)
+
+        NOTA: in questi calcoli non è considerato l'host nat
+
+        Discovery 19 hosts e 10 switches: 6.035 s
+        Discovery 15 hosts e 8 switches: 4.222
+        Discovery 10 hosts e 5 switches: 2.410 s
+        Discovery 4 hots e 2 switches: 1.249 s
+
+    > Tempo medio di esecuzione richiesta HTTP (senza proxy / con proxy):
+        senza proxy:                        con proxy:
+        >  0.032 ms                         > 0.046 ms
+        >  0.016 ms                         > 0.038 ms
+        >  0.021 ms                         > 0.056 ms
+        >  0.013 ms                         > 0.067 ms
+        >  0.015 ms                         > 0.058 ms
+        >  0.015 ms                         > 0.043 ms
+        >  0.015 ms                         > 0.071 ms
+        >  0.012 ms                         > 0.029 ms
+        >  0.014 ms                         > 0.038 ms
+        >  0.016 ms                         > 0.033 ms
+
+------------------------- CONTROLLARE I FILE CSV -------------------------
+    CPU:
+        > Consumo cpu con difesa disattivata / attivata (sia aead che hpke)
+        > Consumo cpu durante attacco, con difesa disattivata / attivata (sia aead che hpke)
+
+    RAM:
+        > Consumo ram con difesa disattivata / attivata (sia aead che hpke)
+        > Consumo ram durante attacco, con difesa disattivata / attivata (sia aead che hpke)
+------------------------- CONTROLLARE I FILE CSV -------------------------
+
+
+
+Network:
+
+    > Quantità di larghezza di banda utilizzata con attacco / senza attacco / con difesa senza attacco
+        senza attacco:      con attacco:      con difesa AES_GCM senza attacco:      con difesa HPKE senza attacco:
+        - 7245.2 bps        - 29827.0 bps     - 8777.2 bps                           - 8347.4 bps
+
+                                              con difesa AES_GCM con attacco:        con difesa HPKE con attacco:
+                                              - 8768.1 bps                           - 8537.0 bps
+
+    > Byte totali utilizzati per scambio delle chiavi tra 1 host e il controller : 765 Byte
+    
+    > Dimensione pacchetto di probing ( h --> c ): 84 Byte, di cui 7 dell'identificatore 'PROBING', 23 di messaggio cifrato, 12 di nonce,
+	14 di header di livello 2, 20 di livello Ip e 8 di livello ICMP
+
+    > Dimensione pacchetto di probing ( c --> h ) 77 Byte, come prima, ma senza l'identificatore 'PROBING' poiché non si crea ambiguità
+
+
+
+
+
+
