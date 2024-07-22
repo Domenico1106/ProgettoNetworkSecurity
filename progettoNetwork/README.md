@@ -23,15 +23,15 @@ cd progettoNetwork
 ```bash 
 sudo python3 topologia.py
 ```
-8. Verrà chiesto se si vuole utilizzare la rete includendo le misure di sicurezza o meno. L'opzione *n* permette di eseguire ONOS nella sua versione originale e vulnerabile. L'opzione *y* o *Y* o ' ' permette di includere le applicazioni custom che implementano le misure di sicurezza.
+8. Verrà chiesto se si vuole utilizzare la rete includendo le misure di sicurezza o meno. L'opzione *n* permette di eseguire ONOS nella sua versione originale e vulnerabile. L'opzione *'y'* o *'Y'* o ' ' permette di includere le applicazioni custom che implementano le misure di sicurezza.
 9. Verrà chiesto se si desidera utilizzare la versione con **AEAD** e *AES_GCM* (scelta **1**), o la versione che usa **HPKE**(scelta **2**). Entrambe le versioni difendono la rete dagli attacchi all'Host Tracking Service, la differenza tra le due sta nel modo in cui effettuano le operazioni di Host Probing.
 11. Dopo aver effettuato una scelta, Mininet creerà la topologia e partirà la CLI. Adesso è possibile simulare gli attacchi alla rete.
 
-+++ NOTA: Tutti gli attacchi previsti considerano come attaccante di default H2. +++
+**+++ NOTA**: Tutti gli attacchi previsti considerano come attaccante di default H2. +++
 
 12. Gli attacchi a disposizione sono 3: `arp_poisoning.py`, `hts_poisoning.py` e `mitm.py`. Esiste infine `mitm_unsafe.py`, che è un'alternativa di `mitm.py`
 
-**+++ NOTA BENE**: Se i meccanismi di difesa *NON* sono attivi (si è scelto **n** nel punto **8)**, `mitm.py`non sarà utilizzabile. Al suo posto bisognerà usare `mitm_unsafe.py`
+**+++ NOTA BENE**: Se i meccanismi di difesa *NON* sono attivi (si è scelto **'n'** nel punto **8.**, `mitm.py`non sarà utilizzabile. Al suo posto bisognerà usare `mitm_unsafe.py`
 
 13) Ciascun attacco si esegue in questo modo: tramite la CLI di Mininet, si avvia *xterm* sull'host attaccante (H2 nei nostri esperimenti) usando il comando: 
 ```bash 
@@ -45,7 +45,6 @@ python3 attacco/nome_attacco.py
 ```bash 
 python3 attacco/mitm.py --host h2
 ```
-
 15) Se le difese sono attive, gli attacchi non andranno a buon fine. Nei log di ONOS compariranno degli avvisi riguardo i tentativi di attacco.
 16) Il progetto è configurato su per eseguire attacchi su una topologia statica e nota all'attaccante (**H2**). Se si necessita di modificare gli attacchi attenersi alla topologia modificare il codice sorgente di `mitm.py`e `mitm_unsafe.py`
 
@@ -69,7 +68,6 @@ chmod +x install.sh
 ./install.sh -a
 ``` 
 Per avviare mininet si può utilizzare il comando `sudo mn` oppure, come fatto durante il progetto, si può creare un programma Python che utilizza le API di mininet per realizzare topologie di rete più specifiche e complesse.
-
 
 ### Controller ONOS:
 
