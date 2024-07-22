@@ -147,8 +147,8 @@ exit  # dalla shell del controller
   - *topologia.py*: classe che si occupa di avviare la topologia. L'utente in questo caso può fare due scelte:
     1. Avviare la topologia in maniera unsafe usando l'Host Location Provider originale di onos;
     2. Avviare la topologia in maniera sicura facendo partire il meccanismo di proxy da parte del nat. In questo caso si possono effettuare ulteriori due scelte:
-        - Usare come meccanismo di crittografia del Probing AEAD_GCM con lo scambio delle chiavi realizzato con Diffie Hellman;
-        - Usare come meccanismo di crittografia del Probing HPKE utilizzando dunque una combinazione tra crittografia asimmetrica e crittografia simmetrica.
+        1. Usare come meccanismo di crittografia del Probing AEAD_GCM con lo scambio delle chiavi realizzato con Diffie Hellman;
+        2. Usare come meccanismo di crittografia del Probing HPKE utilizzando dunque una combinazione tra crittografia asimmetrica e crittografia simmetrica.
 
 
 - **Java**:
