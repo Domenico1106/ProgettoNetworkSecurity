@@ -1,7 +1,7 @@
 # Istruzioni per il corretto utilizzo e funzionamento del progetto di Network Security di Carreri-Cavallo
 
 **+++NOTA BENE**: L'immagine della VM contiene già tutto il necessario per eseguire i file sorgenti del progetto. I file sono già compilati e pronti ad essere eseguiti. Il seguente è un resoconto che comprende: le operazioni da compiere per utilizzare il progetto, le operazioni che sono state effettuate per permettere l'esecuzione del progetto e infine una descrizione dei file contenuti nel repository.
-
+La macchina virtuale utilizzata può essere scaricata al seguente indirizzo: [https://mega.nz/file/PvQx0bwZ#odczLLseWVa3UfYEh7LcI987Ncq50vEJU4Rspym3FuU](https://mega.nz/file/PvQx0bwZ#odczLLseWVa3UfYEh7LcI987Ncq50vEJU4Rspym3FuU)
 ## Come utilizzare il progetto:
 
 1. Avviare da un terminale il container docker con il comando 
