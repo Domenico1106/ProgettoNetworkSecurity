@@ -92,6 +92,20 @@ docker start onos
 docker stop onos
 ```
 
+Dopo aver avviato il container, è necessario attivare alcune applicazioni preinstallate in onos ma che di default sono disattivate. 
+Al primo avvio, le uniche applicazioni attive saranno:
+  - **Default Drivers**
+  - **Onos GUI2**
+  - **Optical Network Model**
+
+Le applicazioni da attivare in seguito sono:
+  -**Reactive Forwarding**
+  -**OpenFlow Base Provider**
+  -**LLDP Link Provider**
+  -**Host Location Provider**
+  
+Sarà sufficiente attivare queste applicazioni solo una volta, poiché rimarrano attive anche durante le successive esecuzioni del container.
+  
 ### Abilitare il controller all'utilizzo di SSH
 
 La prima volta che il container viene avviato non possiede le informazioni possibili per poter utilizzare SSH per cui sono state aggiunte manualmente.
