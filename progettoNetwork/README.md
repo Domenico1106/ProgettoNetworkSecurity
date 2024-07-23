@@ -105,7 +105,12 @@ Le applicazioni da attivare in seguito sono:
   - **Host Location Provider**
   
 Sarà sufficiente attivare queste applicazioni solo una volta, poiché rimarrano attive anche durante le successive esecuzioni del container.
-  
+
+Per poter inoltre compilare ed utilizzare correttamente tutte le dipendenze delle applicazioni custom ONOS è necessario installare il comando `make` e `maven` con i successivi comandi: 
+```bash
+apt install maven
+apt install make
+```
 ### Abilitare il controller all'utilizzo di SSH
 
 La prima volta che il container viene avviato non possiede le informazioni possibili per poter utilizzare SSH per cui sono state aggiunte manualmente.
