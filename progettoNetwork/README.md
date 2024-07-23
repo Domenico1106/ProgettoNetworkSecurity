@@ -99,10 +99,10 @@ Al primo avvio, le uniche applicazioni attive saranno:
   - **Optical Network Model**
 
 Le applicazioni da attivare in seguito sono:
-  -**Reactive Forwarding**
-  -**OpenFlow Base Provider**
-  -**LLDP Link Provider**
-  -**Host Location Provider**
+  - **Reactive Forwarding**
+  - **OpenFlow Base Provider**
+  - **LLDP Link Provider**
+  - **Host Location Provider**
   
 Sarà sufficiente attivare queste applicazioni solo una volta, poiché rimarrano attive anche durante le successive esecuzioni del container.
   
