@@ -74,7 +74,7 @@ Per avviare mininet si può utilizzare il comando `sudo mn` oppure, come fatto d
 Dopo aver installato l'emulatore Mininet si è deciso di utilizzare come controller ONOS nella sua versione 2.7.0, in particolare si è deciso di utilizzare per semplicità e leggerezza un container Docker del controller. Per installare Docker è stata seguita la guida presente al seguente link: [Guida Docker](https://docs.docker.com/engine/install/ubuntu/)
 In seguito per poter eseguire docker senza dover per forza usare il comando 'sudo' è stato aggiunto un docker group al sistema come specificato in questa ulteriore guida:
 [Post Installazione Docker](https://docs.docker.com/engine/install/linux-postinstall/#manage-docker-as-a-non-root-user)
-> **+++ ATTENZIONE**: La vm fornita è senza password di accesso per cui i passaggi di post installazione sono installati ma non funzionano, per tanto docker va eseguito come amministratore con il comando `sudo`. Se si vuole eseguire docker senza *sudo* scegliere una password a caso tramite il comando `passwd <nome_utente>**+++**
+> **+++ ATTENZIONE**: La vm fornita è senza password di accesso per cui i passaggi di post installazione sono installati ma non funzionano, per tanto docker va eseguito come amministratore con il comando `sudo`. Se si vuole eseguire docker senza *sudo* scegliere una password a caso tramite il comando `passwd <nome_utente>`**+++**
 
 Per utilizzare il controller nella versione 2.7.0 per prima cosa è stata pullata la sua
 immagine:
