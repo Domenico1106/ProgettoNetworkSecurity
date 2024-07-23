@@ -139,7 +139,7 @@ service ssh start
 ```
 Fatta questa cosa si può uscire dal container con il comando `exit` e per entrare con ssh si può lanciare il comando
 ```bash 
-ssh root@localhost
+ssh root@localhost -p 2200
 ```
 Inserire poi la password che era stata scelta nei passi precedenti.
 Per semplicità nella modifica del codice dei file sul container è stato sfruttato l'accesso ssh tramite l'estensione *RemoteSSH* di Visual Studio Code.
