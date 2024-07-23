@@ -130,10 +130,14 @@ def add_safety_aead_gcm(net, nhosts):
 
     # time.sleep(2)
     # inizio = time.time()
-    for i in range(1, nhosts - 1):
-        host1 = net.get(f'h{i}')
-        host2 = net.get(f'h{i + 1}')
-        host1.cmd(f'ping -c 1 {host2.IP()}')
+    for i in range(1, nhosts):
+        if i+1 == nhosts:
+            host1 = net.get(f'h{i}')
+            host1.cmd('ping -c 1 10.0.0.254')
+        else:
+            host1 = net.get(f'h{i}')
+            host2 = net.get(f'h{i + 1}')
+            host1.cmd(f'ping -c 1 {host2.IP()}')
     # fine = time.time() - inizio
     # print(f"Tempo pingall = {fine}")
     CLI(net)
@@ -194,10 +198,14 @@ def add_safety_hpke(net, nhosts):
 
     # time.sleep(2)
     # inizio = time.time()
-    for i in range(1, nhosts - 1):
-        host1 = net.get(f'h{i}')
-        host2 = net.get(f'h{i + 1}')
-        host1.cmd(f'ping -c 1 {host2.IP()}')
+    for i in range(1, nhosts):
+        if i+1 == nhosts:
+            host1 = net.get(f'h{i}')
+            host1.cmd('ping -c 1 10.0.0.254')
+        else:
+            host1 = net.get(f'h{i}')
+            host2 = net.get(f'h{i + 1}')
+            host1.cmd(f'ping -c 1 {host2.IP()}')
     # fine = time.time() - inizio
     # print(f"Tempo pingall = {fine}")
     CLI(net)
