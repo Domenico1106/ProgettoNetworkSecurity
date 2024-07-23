@@ -96,11 +96,10 @@ Dopo aver avviato il container, è necessario attivare alcune applicazioni prein
 Al primo avvio, le uniche applicazioni attive saranno:
   - **Default Drivers**
   - **Onos GUI2**
-  - **Optical Network Model**
 
 Le applicazioni da attivare in seguito sono:
   - **Reactive Forwarding**
-  - **OpenFlow Base Provider**
+  - **OpenFlow Base Provider** (che a sua volta attiverà automaticamente **Optical Network Model**)
   - **LLDP Link Provider**
   - **Host Location Provider**
   
