@@ -25,11 +25,11 @@ Tempo:
     > Tempo medio di Discovery (Pingall iniziale + Diffie Hellman)
 
         NOTA: in questi calcoli non è considerato l'host nat
-
-        Discovery 19 hosts e 10 switches: 6.035 s
-        Discovery 15 hosts e 8 switches: 4.222
-        Discovery 10 hosts e 5 switches: 2.410 s
-        Discovery 4 hots e 2 switches: 1.249 s
+						senza difesa	con difesa
+        Discovery 100 hosts e 50 switches: 	18.154s		18.587s
+        Discovery 60 hosts e 30 switches: 	8.507s		8.753s
+        Discovery 20 hosts e 10 switches: 	0.982s		1.216s
+        Discovery 4 hosts e 2 switches: 	0.099s		0.186s
 
     > Tempo medio di esecuzione richiesta HTTP (senza proxy / con proxy):
         senza proxy:                        con proxy:
