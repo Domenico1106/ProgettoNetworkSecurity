@@ -51,7 +51,7 @@ python3 attacco/mitm.py --host h2
     - ARP Poisoning: Dopo aver lanciato l'attacco, aprire wireshark su H2 eseguendo dalla CLI di Mininet il comando `h2 wireshark &`. Eseguendo un ping tra le due vittime (H1 e H3), H2 intercetterà i pacchetti e sarà possibile visualizzarli.
     - MITM unsafe: Dopo aver lanciato l'attacco, dal terminale dell'attaccante (H2) sarà possibile visuaizzare le operazioni eseguite. Eseguendo un ping tra le due vittime (H1 e H3), H2 intercetterà i pacchetti e sarà possibile visualizzarli.
     - MITM: è un attacco che non può andare a buon fine, in quanto pensato per inviare richieste HTTP in presenza di un proxy. Ma se il proxy di difesa è attivo i tentativi di attacco saranno sempre bloccati. Si tratta di un concept per visualizzare come si dovrebbe tentare un attacco in presenza di un proxy. 
-19) Il progetto è configurato su per eseguire attacchi su una topologia statica e nota all'attaccante (**H2**). Se si necessita di modificare gli attacchi attenersi alla topologia modificare il codice sorgente di `mitm.py`e `mitm_unsafe.py`
+19) Il progetto è configurato per eseguire attacchi su una topologia statica e nota all'attaccante (**H2**). Se si necessita di modificare gli attacchi attenersi alla topologia modificare il codice sorgente di `mitm.py`e `mitm_unsafe.py`
 
 ## Passaggi effettuati per configurare l'ambiente in cui sviluppare ed eseguire il progetto:
 
